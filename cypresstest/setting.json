@@ -1,0 +1,7 @@
+{
+    "webLink": "https://smartpharmacy.digihcs.com",
+    "retail": "/retail",
+    "storeImport": "/new-store-import",
+    "wait": 500,
+    "waitdata": 2000
+}

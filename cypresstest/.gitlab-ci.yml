@@ -1,0 +1,17 @@
+before_script:
+  - export PATH=$PATH:/home/qc1/.nvm/versions/node/v10.8.0/bin/
+
+cypress-e2e:
+  image: cypress/base
+  stage: test
+  script:
+    - npm install
+    - whoami
+    - pwd
+    - cypress run
+  artifacts:
+    expire_in: 1 week
+    when: always
+    paths:
+    - cypress/screenshots
+    - cypress/videos
